@@ -11,6 +11,7 @@ import {
 import { Home } from '@screens/Home';
 import { Loader } from '@components/Loader';
 import { Statistics } from '@screens/Statistics';
+import { NewMeal } from '@screens/NewMeal';
 
 export default function App() {
   const [fontsLoaded] = useFonts({

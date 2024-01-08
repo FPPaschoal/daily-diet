@@ -1,3 +1,4 @@
+import { StyleProp, ViewStyle } from 'react-native';
 import { Container, Description, TextData } from './styles';
 
 export type Props = {
@@ -5,6 +6,7 @@ export type Props = {
   size?: 'MEDIUM' | 'LARGE';
   textData: string;
   description: string;
+  style?: StyleProp<ViewStyle>;
 };
 
 export function DataContainer({
@@ -12,6 +14,7 @@ export function DataContainer({
   size = 'MEDIUM',
   textData,
   description,
+  style,
 }: Props) {
   function getBackgroundColor() {
     switch (type) {
@@ -34,7 +37,7 @@ export function DataContainer({
   }
 
   return (
-    <Container type={getBackgroundColor()}>
+    <Container type={getBackgroundColor()} style={style}>
       <TextData size={getTextSize()}>{textData}</TextData>
       <Description>{description}</Description>
     </Container>

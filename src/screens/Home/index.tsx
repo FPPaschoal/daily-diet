@@ -20,10 +20,14 @@ export function Home() {
         <Logo source={logoImg} />
         <Icon name="UserCircle" color="GRAY_1" size={40} />
       </Header>
-      <DataContainer
-        textData="90,86%"
-        description="das refeições dentro da dieta"
-      />
+      <PercentContainer>
+        <ArrowUpRightIcon />
+        <DataContainer
+          textData="90,86%"
+          description="das refeições dentro da dieta"
+          type="SUCCESS"
+        />
+      </PercentContainer>
       <View>
         <Title>Refeições</Title>
         <Button iconName="Plus" text="Nova refeição" />
