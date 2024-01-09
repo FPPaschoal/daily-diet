@@ -5,8 +5,8 @@ export function DayList() {
   return (
     <Container>
       <Day>12.08.22</Day>
-      <MealData />
-      <MealData />
+      <MealData type="SUCCESS" />
+      <MealData type="WARNING" />
     </Container>
   );
 }

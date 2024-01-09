@@ -2,11 +2,15 @@ import { Container, Content, Content2, Title } from './styles';
 import { Header } from '@components/Header';
 import { DataContainer } from '@components/DataContainer';
 
-export function Statistics() {
+type StatisticsProps = {
+  type: 'SUCCESS' | 'WARNING';
+};
+
+export function Statistics({ type }: StatisticsProps) {
   return (
     <Container>
       <Header
-        type="SUCCESS"
+        type={type}
         size="LARGE"
         subtitle="das refeições dentro da dieta"
         title="98.08%"

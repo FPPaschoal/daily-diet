@@ -34,10 +34,10 @@ export const Meal = styled.Text`
   flex: 1;
 `;
 
-export const Status = styled.View`
+export const Status = styled.View<{ type: 'SUCCESS' | 'WARNING' }>`
   width: 14px;
   height: 14px;
   border-radius: 7px;
-  background-color: ${({ theme }) => theme.COLORS.RED_MID};
-  /* background-color: ${({ theme }) => theme.COLORS.GREEN_MID}; */
+  background-color: ${({ theme, type }) =>
+    type === 'SUCCESS' ? theme.COLORS.GREEN_MID : theme.COLORS.RED_MID};
 `;

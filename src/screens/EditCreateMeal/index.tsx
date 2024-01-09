@@ -15,7 +15,11 @@ import {
 } from '@react-native-community/datetimepicker';
 import { InputCheckBox } from '@components/InputCheckBox';
 
-export function NewMeal() {
+type EditCreateMealProps = {
+  type: 'EDIT' | 'CREATE';
+};
+
+export function EditCreateMeal({ type }: EditCreateMealProps) {
   const [form, setForm] = useState({
     name: '',
     description: '',
@@ -115,9 +119,11 @@ export function NewMeal() {
           <Label>Está dentro da dieta?</Label>
           <InputCheckBox onValueChange={handleValueChange} />
         </Form>
-
-        <Button text="Cadastrar refeição" />
-        {/* <Button text="Salvar alterações" /> */}
+        {type === 'CREATE' ? (
+          <Button text="Cadastrar refeição" />
+        ) : (
+          <Button text="Salvar alterações" />
+        )}
       </Content>
     </Container>
   );

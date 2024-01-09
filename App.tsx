@@ -11,9 +11,10 @@ import {
 import { Home } from '@screens/Home';
 import { Loader } from '@components/Loader';
 import { Statistics } from '@screens/Statistics';
-import { NewMeal } from '@screens/NewMeal';
+import { EditCreateMeal } from '@screens/EditCreateMeal';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Feedback } from '@screens/Feedback';
+import { Meal } from '@screens/Meal';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -28,7 +29,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Feedback type="positive" /> : <Loader />}
+      {fontsLoaded ? <Feedback type="negative" /> : <Loader />}
     </ThemeProvider>
   );
 }
