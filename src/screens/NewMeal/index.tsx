@@ -117,8 +117,7 @@ export function NewMeal() {
         </Form>
 
         <Button text="Cadastrar refeição" />
-        {/* <Button text="Editar refeição" iconName="PencilSimpleLine" />
-        <Button text="Excluir refeição" iconName="Trash" type="OUTLINE" /> */}
+        {/* <Button text="Salvar alterações" /> */}
       </Content>
     </Container>
   );

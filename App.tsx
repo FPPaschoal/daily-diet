@@ -13,6 +13,7 @@ import { Loader } from '@components/Loader';
 import { Statistics } from '@screens/Statistics';
 import { NewMeal } from '@screens/NewMeal';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Feedback } from '@screens/Feedback';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -27,7 +28,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <NewMeal /> : <Loader />}
+      {fontsLoaded ? <Feedback type="positive" /> : <Loader />}
     </ThemeProvider>
   );
 }

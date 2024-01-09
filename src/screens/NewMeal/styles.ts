@@ -11,6 +11,7 @@ export const Content = styled.View`
   margin-top: -20px;
   padding: 24px;
   padding-bottom: 48px;
+  justify-content: space-between;
 `;
 
 export const Label = styled.Text`
@@ -22,6 +23,5 @@ export const Label = styled.Text`
 `;
 
 export const Form = styled.View`
-  flex: 1;
   gap: 12px;
 `;
