@@ -5,7 +5,12 @@ import { DataContainer } from '@components/DataContainer';
 export function Statistics() {
   return (
     <Container>
-      <Header type="SUCCESS" size="LARGE" />
+      <Header
+        type="SUCCESS"
+        size="LARGE"
+        subtitle="das refeições dentro da dieta"
+        title="98.08%"
+      />
       <Content>
         <Title>Estatísticas gerais</Title>
 

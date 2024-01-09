@@ -26,7 +26,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Statistics /> : <Loader />}
+      {fontsLoaded ? <NewMeal /> : <Loader />}
     </ThemeProvider>
   );
 }

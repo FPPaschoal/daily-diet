@@ -13,7 +13,7 @@ export const Container = styled.View<ContainerProps>`
   background-color: ${({ theme, type }) => theme.COLORS[type]};
   align-items: center;
   justify-content: center;
-  padding: 30px 24px 48px 24px;
+  padding: 60px 24px 48px 24px;
   position: relative;
 `;
 
@@ -36,5 +36,6 @@ export const Subtitle = styled.Text`
 
 export const BackButton = styled.TouchableOpacity`
   align-self: flex-start;
-  padding: 8px;
+  left: 24px;
+  position: absolute;
 `;
