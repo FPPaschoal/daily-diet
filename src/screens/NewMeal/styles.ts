@@ -10,5 +10,18 @@ export const Content = styled.View`
   border-radius: 20px 20px 0 0;
   margin-top: -20px;
   padding: 24px;
+  padding-bottom: 48px;
+`;
+
+export const Label = styled.Text`
+  ${({ theme }) => css`
+    color: ${theme.COLORS.GRAY_2};
+    font-size: ${theme.FONT_SIZE.SM}px;
+    font-family: ${theme.FONT_FAMILY.BOLD};
+  `}
+`;
+
+export const Form = styled.View`
+  flex: 1;
   gap: 12px;
 `;

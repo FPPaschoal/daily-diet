@@ -9,9 +9,14 @@ type ButtonProps = TouchableOpacityProps & {
   type?: 'SOLID' | 'OUTLINE';
 };
 
-export function Button({ text, iconName, type = 'SOLID' }: ButtonProps) {
+export function Button({
+  text,
+  iconName,
+  type = 'SOLID',
+  ...rest
+}: ButtonProps) {
   return (
-    <Container type={type}>
+    <Container type={type} {...rest}>
       {iconName && (
         <Icon
           name={iconName}

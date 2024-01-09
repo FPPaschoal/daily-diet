@@ -11,6 +11,8 @@ export const Container = styled(TouchableOpacity)<{ type: ContainerType }>`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
 
   ${({ type, theme }) =>
     type === 'SOLID'

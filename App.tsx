@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'styled-components/native';
 import theme from './src/theme/index';
-import { SafeAreaView, StatusBar } from 'react-native';
+import { StatusBar } from 'react-native';
 
 import {
   useFonts,
@@ -12,6 +12,7 @@ import { Home } from '@screens/Home';
 import { Loader } from '@components/Loader';
 import { Statistics } from '@screens/Statistics';
 import { NewMeal } from '@screens/NewMeal';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
